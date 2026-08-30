@@ -28,7 +28,7 @@ jobs:
       - name: Décompresser TopDepartLD v0.8
         run: |
           mkdir project
-          unzip -q TopDepartLD-v12.zip -d project
+          unzip -q TopDepartLD-v13.zip -d project
           
       - name: Trouver le projet Android
         run: |
@@ -43,5 +43,5 @@ jobs:
       - name: Publier l'APK
         uses: actions/upload-artifact@v4
         with:
-          name: TopDepartLD-v0.8-APK
+          name: TopDepartLD-APK
           path: ${{ env.PROJECT_DIR }}/app/build/outputs/apk/debug/app-debug.apk
