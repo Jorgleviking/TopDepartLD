@@ -28,7 +28,7 @@ jobs:
       - name: Décompresser TopDepartLD v0.8
         run: |
           mkdir project
-          unzip -q TopDepartLDtestv3.zip -d project
+          unzip -q TopDepartLDtestv4.zip -d project
           
       - name: Trouver le projet Android
         run: |
